@@ -19,7 +19,7 @@ alias mkvenv="python3 -m venv venv"
 
 # Start venv to run virtual env
 startvenv() {
-    source "$1"/bin/activate
+    source venv/bin/activate
 }
 # mkreq -Creates a requirements file from dependencies
 alias mkreq="pip freeze > requirments.txt"
