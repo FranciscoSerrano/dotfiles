@@ -52,3 +52,9 @@ function venv() {
         fi
     fi
 }
+
+
+# To activate conda on zsh run:
+# source /Users/my_username/opt/anaconda3/bin/activate
+# conda init zsh
+# conda list
