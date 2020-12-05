@@ -5,6 +5,8 @@
 #    . ~/.aliases
 #fi
 
+# run source ~/.zshrc after making changes to save
+
 # My Aliases
 
 # Python Shortcuts
