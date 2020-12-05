@@ -13,14 +13,14 @@
 
 alias python="python3"
 alias pip="pip3"
-alias mkvenv="python3 -m venv venv"
+
 
 # Python VENV Shortcuts
 
+# create venv
+alias ve='python3 -m venv ./venv'
 # Start venv to run virtual env
-startvenv() {
-    source venv/bin/activate
-}
+alias va='source ./venv/bin/activate'
 # mkreq -Creates a requirements file from dependencies
 alias mkreq="pip freeze > requirments.txt"
 # usereq - uses an existing requirements file
@@ -29,3 +29,26 @@ alias usereq="pip install -r requirements.txt"
 alias usereqfrom="pip install -r "
 # usekernel
 alias usekernel="ipython kernel install --user --name=venv"
+
+function venv() {
+
+    REQ=requirements.txt
+
+    [[ ! -z "$VIRTUAL_ENV" ]] && deactivate && return
+
+    if [[ -d "venv" ]]; then
+        echo "Using 'venv' as virtual environement.."
+        source venv/bin/activate
+    else
+        python -m venv venv
+        source venv/bin/activate
+        echo "Created new virtual environement venv.."
+        if [[ -f "$REQ" ]]; then
+            read -p "Do you want to install requirements.xt?(y/n)" CHOICE
+            if [[ "$CHOICE" == "y" ]]; then
+                echo "Installing dependencies..."
+                pip install -r "$REQ"
+            fi
+        fi
+    fi
+}
