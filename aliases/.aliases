@@ -1,0 +1,29 @@
+# To use this file in zsh add this to .zshrc:
+# source $HOME/.aliases
+# To use this file in Bash add this to .bashrc
+#if [ -f ~/.aliases ]; then
+#    . ~/.aliases
+#fi
+
+# My Aliases
+
+# Python Shortcuts
+
+alias python="python3"
+alias pip="pip3"
+alias mkvenv="python3 -m venv venv"
+
+# Python VENV Shortcuts
+
+# Start venv to run virtual env
+startvenv() {
+    source "$1"/bin/activate
+}
+# mkreq -Creates a requirements file from dependencies
+alias mkreq="pip freeze > requirments.txt"
+# usereq - uses an existing requirements file
+alias usereq="pip install -r requirements.txt"
+# usereqfrom {file} - uses a chosen file as a requirements file
+alias usereqfrom="pip install -r "
+# usekernel
+alias usekernel="ipython kernel install --user --name=venv"
