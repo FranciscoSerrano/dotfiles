@@ -55,5 +55,5 @@ function venv() {
 
 # Yabai Aliases
 # Start Yabai
-alias startYabai = "brew services start yabai"
-alias stopYabai = "brew services stop yabai"
+alias startYabai="brew services start yabai"
+alias stopYabai="brew services stop yabai"
