@@ -3,6 +3,7 @@ set nocompatible
 call plug#begin('~/.vim/plugged')
 Plug 'sheerun/vim-polyglot'
 Plug 'sainnhe/edge'
+Plug 'preservim/nerdtree'
 call plug#end()
 "--------------------------------------------------------------
 " From Jay;
@@ -15,7 +16,7 @@ set shiftwidth=2
 set expandtab
 autocmd FileType make set tabstop=8 softtabstop=8 shiftwidth=8 noexpandtabsyntax on
 
-set number
+set relativenumber
 set autoindent
 packadd! dracula
 syntax enable
