@@ -9,6 +9,20 @@
 
 # My Aliases
 
+alias clean='rm -rf ~/.Trash/*; rm -rf ~/Downloads/*'
+
+# Show/hide hidden files in Finder
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+# Shortcuts
+alias ch='history | grep "git commit"'
+alias hg='history | grep'
+
+# Yabai Aliases
+alias startYabai="brew services start yabai"
+alias stopYabai="brew services stop yabai"
+
 # Python Shortcuts
 
 #alias python="python3"
@@ -53,7 +67,3 @@ function venv() {
     fi
 }
 
-# Yabai Aliases
-# Start Yabai
-alias startYabai="brew services start yabai"
-alias stopYabai="brew services stop yabai"
