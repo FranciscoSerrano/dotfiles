@@ -25,17 +25,20 @@ gh repo clone FranciscoSerrano/.dotfiles
 
 ```zsh
 # There are better and less manual ways to do this;
-# investigate install scripts and bootstrapping tools.
+# In fact the install.sh script automates this now.
 
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+
+# New steps
+install.sh ~/
 ```
 
 
 4. Install Homebrew, followed by the software listed in the Brewfile.
 
 ```zsh
-# These could also be in an install script.
+# The install script also does this for you.
 
 # Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
