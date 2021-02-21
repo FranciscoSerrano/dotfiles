@@ -19,6 +19,7 @@ brew cask install anaconda
 # Dev Tools
 brew install git
 brew install htop
+brew install tree
 brew install docker
 brew install neofetch
 brew install starship #shell theme
