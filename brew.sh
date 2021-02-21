@@ -36,6 +36,7 @@ brew cask install brave-browser
 
 #File Encryption
 brew cask install keka
+brew cask install 1password
 brew install jesseduffield/horcrux/horcrux
 
 # Writing Apps
