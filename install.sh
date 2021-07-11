@@ -15,7 +15,7 @@ homedir=$1
 dotfiledir=${homedir}/.dotfiles
 
 # list of files/folders to symlink in ${homedir}
-files="aliases bashrc gitconfig vim vimrc yabai zshrc"
+files="aliases bashrc gitconfig vim vimrc zshrc"
 
 # change to the dotfiles directory
 echo "Changing to the ${dotfiledir} directory"
@@ -32,4 +32,4 @@ done
 curl "https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash" > ${homedir}/.git-completion.bash
 
 # Run the Homebrew Script
-./brew.sh
+# ./brew.sh
