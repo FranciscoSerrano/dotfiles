@@ -35,14 +35,26 @@ set number
 set wildmenu
 set autoindent
 set laststatus=2
+set statusline=%y\ %.60F%=(%l/%L)
 set cmdheight=1
 syntax enable
 set spelllang=en_us
 colorscheme nord
+let mapleader = " "
 let g:airline_theme='nord'
 
 "--------------------------------------------------------------
 " Key Remaps
+" Exit Vim if NERDTree is the only window remaining in the only tab.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 " Remap arrow keys to resize window
 " nnoremap <Up>    :resize -2<CR>
 " nnoremap <Down>  :resize +2<CR>
