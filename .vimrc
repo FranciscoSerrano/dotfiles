@@ -42,6 +42,7 @@ autocmd FileType make set tabstop=8 softtabstop=8 shiftwidth=8 noexpandtabsyntax
 set number
 set wildmenu
 set autoindent
+set smartindent
 set laststatus=2
 set statusline=%y\ %.60F%=(%l/%L)
 set cmdheight=1
