@@ -9,6 +9,7 @@ Plug 'ap/vim-css-color'
 Plug 'junegunn/goyo.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'pangloss/vim-javascript'
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 " Colorschemes
 Plug 'ayu-theme/ayu-vim'
 Plug 'sainnhe/edge'
