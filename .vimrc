@@ -46,11 +46,12 @@ set smartindent
 set laststatus=2
 set statusline=%y\ %.60F%=(%l/%L)
 set cmdheight=1
-syntax enable
 set spelllang=en_us
-colorscheme nord
+let g:onedark_termcolors=16
+colorscheme onedark
+set background=dark
 let mapleader = " "
-let g:airline_theme='nord'
+let g:airline_theme='onedark'
 
 "--------------------------------------------------------------
 " Key Remaps
@@ -69,3 +70,4 @@ nnoremap <C-l> <C-w>l
 " nnoremap <Down>  :resize +2<CR>
 " nnoremap <Left>  :vertical resize -2<CR>
 " nnoremap <Right> :vertical resize +2<CR>
+"

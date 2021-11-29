@@ -10,7 +10,7 @@
 # My Aliases
 
 alias clean='rm -rf ~/.Trash/*; rm -rf ~/Downloads/*'
-alias journal="cd ~/Documents/Journal && vim $(date +%Y-%m-%d).md"
+#alias journal="cd ~/Documents/Journal && vim $(date +%Y-%m-%d).md"
 alias gensecret="openssl rand -hex 32"
 
 # Show/hide hidden files in Finder
