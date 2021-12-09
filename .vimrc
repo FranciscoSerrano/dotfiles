@@ -13,6 +13,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " Syntax / Writing
 Plug 'ap/vim-css-color'
+Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/goyo.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'pangloss/vim-javascript'
