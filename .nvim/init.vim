@@ -1,12 +1,6 @@
-source $HOME/.config/nvim/vim-plug/plugins.vim
+"source $HOME/.config/nvim/vim-plug/plugins.vim
 
 """"""""""""""""""""""VIM-PLUG""""""""""""""""""""
-" download plug.vim
-if empty(glob('~/.config/nvim/vim-plug/pluggins.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
 " Initialize plugin system
 set nocompatible
 call plug#begin('~/.config/nvim/vim-plug')
@@ -21,6 +15,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'pangloss/vim-javascript'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 " Colorschemes
+Plug 'sainnhe/everforest'
 Plug 'ayu-theme/ayu-vim'
 Plug 'sainnhe/edge'
 Plug 'morhetz/gruvbox'
@@ -40,7 +35,7 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 autocmd FileType make set tabstop=8 softtabstop=8 shiftwidth=8 noexpandtabsyntax on
-
+autocmd FileType python set tabstop=4 softtabstop=4 shiftwidth=4
 "--------------------------------------------------------------
 " Misc Preferences
 set number
@@ -56,11 +51,11 @@ if has('termguicolors')
   set termguicolors
 endif
 " Available values: 'hard', 'medium'(default), 'soft'
-let g:gruvbox_material_background = 'soft'
-colorscheme gruvbox
+let g:everforest_background = 'medium'
+colorscheme everforest
 let g:onedark_termcolors=16
 let mapleader = " "
-let g:airline_theme='gruvbox'
+let g:airline_theme='everforest'
 
 "--------------------------------------------------------------
 " Key Remaps
