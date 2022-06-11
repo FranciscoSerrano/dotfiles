@@ -18,6 +18,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'pangloss/vim-javascript'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+Plug 'psf/black', { 'branch': 'stable' }
 " Colorschemes
 Plug 'ayu-theme/ayu-vim'
 Plug 'sainnhe/edge'
@@ -49,10 +50,10 @@ set statusline=%y\ %.60F%=(%l/%L)
 set cmdheight=1
 set spelllang=en_us
 let g:onedark_termcolors=16
-colorscheme onedark
+colorscheme nord
 set background=dark
 let mapleader = " "
-let g:airline_theme='onedark'
+let g:airline_theme='nord'
 
 "--------------------------------------------------------------
 " Key Remaps

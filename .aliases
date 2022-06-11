@@ -12,7 +12,8 @@
 alias clean='rm -rf ~/.Trash/*; rm -rf ~/Downloads/*'
 #alias journal="cd ~/Documents/Journal && vim $(date +%Y-%m-%d).md"
 alias gensecret="openssl rand -hex 32"
-
+# LOVE2D 
+alias love="/Applications/love.app/Contents/MacOS/love"
 # Show/hide hidden files in Finder
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
@@ -24,6 +25,12 @@ alias hg='history | grep'
 # Yabai Aliases
 alias startYabai="brew services start yabai"
 alias stopYabai="brew services stop yabai"
+
+#Koba DFU
+alias dfu="astrisctl relay dfu 1"
+
+#Take a screenshot
+alias screenshot="camtool -a screenshot && mv /tmp/camtool_screenshot* ~/Desktop && echo \"\nScreenshots are now available at ~/Desktop\""
 
 # Python Shortcuts
 
