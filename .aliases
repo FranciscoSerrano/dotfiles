@@ -22,21 +22,17 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 alias ch='history | grep "git commit"'
 alias hg='history | grep'
 
-# Yabai Aliases
-alias startYabai="brew services start yabai"
-alias stopYabai="brew services stop yabai"
-
 #Koba DFU
 alias dfu="astrisctl relay dfu 1"
 
 #Take a screenshot
 alias screenshot="camtool -a screenshot && mv /tmp/camtool_screenshot* ~/Desktop && echo \"\nScreenshots are now available at ~/Desktop\""
 
-# Python Shortcuts
-
-#alias python="python3"
-#alias pip="pip3"
-
+# vim stuff
+alias vi="nvim"
+alias vim="nvim"
+alias viconfig="nvim ~/.config/nvim/init.lua"
+alias viedit="cd ~/.config/nvim"
 
 # Python VENV Shortcuts
 
