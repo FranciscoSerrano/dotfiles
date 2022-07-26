@@ -20,6 +20,9 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/goyo.vim'
 Plug 'sheerun/vim-polyglot'
+-- Status Line
+Plug 'nvim-lualine/lualine.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
 vim.call('plug#end')
 ----------------------------------------------------
 -- Preferences for color
@@ -118,3 +121,20 @@ require("catppuccin").setup({
 })
 
 vim.cmd [[colorscheme catppuccin]]
+----------------------------------------------------
+-- Preferences for status line
+require('lualine').setup({
+		options = { 
+			theme = 'auto',
+			section_separators = '', 
+			component_separators = ''
+		},
+		sections = {
+			lualine_a = {'mode'},
+			lualine_b = {'branch', 'diff', 'diagnostics'},
+			lualine_c = {'filename'},
+			lualine_x = {'encoding', 'fileformat', 'filetype'},
+			lualine_y = {'progress'},
+			lualine_z = {'location'}
+		},
+	})
