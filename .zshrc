@@ -21,4 +21,4 @@ eval "$(starship init zsh)"
 export PATH="/opt/homebrew/opt/python@3.10/bin:$PATH"
 
 ### QuickScript added this python bin path for 'quick' to be global ###
-export PATH=/Users/franciscoserrano/Library/Python/3.9/bin:$PATH
+export PATH=/Users/franciscoserrano/Library/Python/3.10/bin:$PATH
