@@ -18,4 +18,10 @@ return require('packer').startup(function(use)
 	-- Status Line
 	use 'nvim-lualine/lualine.nvim'
 	use 'kyazdani42/nvim-web-devicons'
+
+	-- File Exploration
+	use {
+		'nvim-telescope/telescope.nvim', tag = '0.1.0',
+		requires = { {'nvim-lua/plenary.nvim'} }
+	}
 end)
