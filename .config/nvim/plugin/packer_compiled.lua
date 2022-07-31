@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/Users/franciscoserrano/.local/share/nvim/site/pack/packer/start/nord-vim",
     url = "https://github.com/arcticicestudio/nord-vim"
   },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/Users/franciscoserrano/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/kyazdani42/nvim-tree.lua"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/Users/franciscoserrano/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
