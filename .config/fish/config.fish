@@ -73,6 +73,24 @@ function openRadarNumber
 	end
 end
 
+function submit
+    # Check if all three arguments are provided
+    if test (count $argv) -ne 3
+        echo "Usage: submit tag gitURL train"
+		echo "	- parameter tag: The git tag you wish to submit to the build"
+		echo "	- parameter gitURL: The git url for the project the tag belongs to"
+		echo "	- parameter train: The train you wish to submit to."
+        return 1
+    end
+
+    set tag $argv[1]
+    set gitURL $argv[2]
+    set train $argv[3]
+
+	submitproject -noLogging -git -url $gitURL -tag $tag $train
+    return
+end
+
 function openCurrentXcode
 	open (xcode-select -p | grep -io ".*Xcode\.app")
 end
