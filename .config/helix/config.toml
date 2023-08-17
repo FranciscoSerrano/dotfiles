@@ -1,7 +1,7 @@
 theme = "catppuccin_macchiato"
 
 [editor]
-line-number = "relative"
+# line-number = "relative"
 
 [editor.cursor-shape]
 insert = "bar"
