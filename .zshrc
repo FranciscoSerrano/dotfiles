@@ -26,3 +26,7 @@ export PATH=/Users/franciscoserrano/Library/Python/3.10/bin:$PATH
 
 # Added by Amplify CLI binary installer
 export PATH="$HOME/.amplify/bin:$PATH"
+
+#### Added by green-restore install-tools
+autoload -Uz compinit && compinit
+####
