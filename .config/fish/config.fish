@@ -8,6 +8,10 @@ function gc
 	git commit -v $argv
 end
 
+function ga
+	git add $argv
+end
+
 function gs
 	git status
 end
@@ -41,7 +45,7 @@ function ggg
 end
 
 function gt
-	git tag | ~jamesm/bin/natsort
+	git tag $argv
 end
 
 function gtd
@@ -56,55 +60,7 @@ function grc
 	gr --continue
 end
 
-function gitCommitsForRadar
-	if test -z $argv[1]
-		echo "No radar number given."
-
-		return 1
-	end
-
-	set branch (git rev-parse --abbrev-ref HEAD)
-
-	for hash in (git log --grep=$argv[1] --pretty="%H" $branch)
-		echo (basename $PWD) "($branch) $hash"
-	end
-end
-
-function copyGitCommitsForRadar
-	gitCommitsForRadar $argv | pbcopy
-end
-
-function gitPrependMessageToCommit
-	git filter-branch --msg-filter "awk '{print "$argv[1]\n\n" $0}'" $argv[2]
-end
-
-function installRootToSDK
-	sudo darwinup -p (xcrun --sdk macosx.internal --show-sdk-path) install $argv
-end
-
-function openRadarSCM
-	if test -d .git
-		set -g number (git branch --contains | grep -Eo "[0-9]+")
-	else if test -d .svn
-		set -g number (svn info | grep -Eo "[0-9]+" | head -n 1)
-	else
-		echo "Current directory is not a GIT or SVN repository."
-
-		return 1
-	end
-
-	if test $number:
-		open "rdar://$number"
-
-		set -e number
-	else
-		echo "Radar number not found in branch name."
-
-		set -e number
-
-		return 2
-	end
-end
+# --- MISC FUNCTIONS ---
 
 function openRadarNumber
 	if test $argv[1]
@@ -133,6 +89,9 @@ function lsp
 	log show --predicate $argv
 end
 
+function whatsa
+	device_model_map -like $argv[1]
+end
 
 # ~/.config/fish/config.fish
 
