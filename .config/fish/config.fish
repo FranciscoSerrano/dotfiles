@@ -12,6 +12,10 @@ function ga
 	git add $argv
 end
 
+function gco
+	git checkout $argv
+end
+
 function gs
 	git status
 end
@@ -109,6 +113,14 @@ end
 
 function whatsa
 	device_model_map -like $argv[1]
+end
+
+function setupautomation
+	cd ~/Dev/SetupAutomation && hx ./
+end
+
+function notes
+	cd ~/Documents/MarkdownNotes && hx ./
 end
 
 # ~/.config/fish/config.fish
