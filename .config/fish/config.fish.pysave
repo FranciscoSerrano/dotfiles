@@ -66,10 +66,6 @@ end
 
 # --- MISC FUNCTIONS ---
 
-function ls
-	lsd $argv
-end
-
 function openRadarNumber
 	if test $argv[1]
 		echo "Opening $argv[1] in Radar..."
@@ -135,7 +131,3 @@ end
 
 starship init fish | source
 
-
-# Setting PATH for Python 3.12
-# The original version is saved in /Users/franciscoserrano/.config/fish/config.fish.pysave
-set -x PATH "/Library/Frameworks/Python.framework/Versions/3.12/bin" "$PATH"
