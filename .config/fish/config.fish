@@ -4,6 +4,10 @@ end
 
 # --- GIT COMMANDS ---
 
+function gw
+	git worktree $argv
+end
+
 function gc
 	git commit -v $argv
 end
