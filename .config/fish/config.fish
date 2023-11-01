@@ -124,7 +124,7 @@ function whatsa
 end
 
 function setupautomation
-	cd ~/Dev/SetupAutomation && hx ./
+	cd ~/Projects/SetupAutomation && hx ./
 end
 
 function notes
