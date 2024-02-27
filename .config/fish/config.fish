@@ -147,14 +147,17 @@ function python
 	/opt/homebrew/Cellar/python@3.12/3.12.1_1/bin/python3.12 $argv
 end
 
+function v
+    nvim ./
+end
+
+function editV
+    cd ~/.config/nvim/ && nvim ./
+end
+
 # ~/.config/fish/config.fish
 
 starship init fish | source
-
-if status is-interactive
-and not set -q TMUX
-    exec tmux
-end
 
 # --- Path Modifications ---
 set -x PATH "/Users/franciscoserrano/.dotfiles/bin/" "$PATH"
