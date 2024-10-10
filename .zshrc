@@ -30,3 +30,7 @@ export PATH="$HOME/.amplify/bin:$PATH"
 #### Added by green-restore install-tools
 autoload -Uz compinit && compinit
 ####
+
+fpath=(/Users/franciscoserrano/.houston_autocomplete $fpath)
+autoload -U compinit
+compinit
