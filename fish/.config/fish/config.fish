@@ -125,3 +125,5 @@ set -Ux EDITOR nvim
 set -gx EDITOR nvim
 set -gx VISUAL nvim
 
+
+fzf --fish | source
