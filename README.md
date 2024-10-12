@@ -4,7 +4,7 @@
 
 1. Clone this repository to your home directory
 
-2. Using the package manager of your choice instal [stow](https://www.gnu.org/software/stow/)
+2. Using the package manager of your choice install [stow](https://www.gnu.org/software/stow/)
 
 3. `cd` into the `.dotfiles` directory.
 
