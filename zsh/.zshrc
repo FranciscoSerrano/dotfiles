@@ -24,7 +24,7 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
 
 # Add in snippets
-zinit snippet OMZL::git.zsh
+zinit snippet OMZL::git.zsh # cheat sheet: https://kapeli.com/cheat_sheets/Oh-My-Zsh_Git.docset/Contents/Resources/Documents/index
 zinit snippet OMZP::git
 
 # Load completions
