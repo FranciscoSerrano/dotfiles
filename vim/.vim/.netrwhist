@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =7
-let g:netrw_dirhist_7='/Users/franciscoserrano/Projects/SetupAutomation'
-let g:netrw_dirhist_6='/Users/franciscoserrano/Projects/SetupAutomation/Object Models'
-let g:netrw_dirhist_5='/Users/franciscoserrano/Projects/SetupAutomation/Object Models/Shared'
-let g:netrw_dirhist_4='/Users/franciscoserrano/Projects/SetupAutomation/Object Models'
-let g:netrw_dirhist_3='/Users/franciscoserrano/Projects/SetupAutomation'
-let g:netrw_dirhist_2='/Users/franciscoserrano/Projects/SetupAutomation/Object Models'
-let g:netrw_dirhist_1='/Users/franciscoserrano/Projects/SetupAutomation'
