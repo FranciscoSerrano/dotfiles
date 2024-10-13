@@ -14,4 +14,11 @@
 
 > note: if you only want to use the config for a specific package you can just run `stow <package name>` for example `stow nvim` instead of symlinking everything.
 
+### Homebrew installation:
+```bash
+# Leaving a machine
+brew leaves > leaves.txt
 
+# Fresh installation
+xargs brew install < leaves.txt
+```
