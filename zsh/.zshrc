@@ -68,6 +68,7 @@ alias vim='nvim'
 alias c='clear'
 
 # Shell integrations
+eval "$(zoxide init zsh)"
 eval "$(fzf --zsh)"
 eval "$(starship init zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
