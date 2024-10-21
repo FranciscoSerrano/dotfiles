@@ -7,7 +7,7 @@
   <levelTenCombat>false</levelTenCombat>
   <skipWindowPreparation>false</skipWindowPreparation>
   <sawAdvancedCharacterCreationIndicator>false</sawAdvancedCharacterCreationIndicator>
-  <timesPlayed>21</timesPlayed>
+  <timesPlayed>34</timesPlayed>
   <windowMode>1</windowMode>
   <displayIndex>0</displayIndex>
   <gamepadMode>Auto</gamepadMode>
@@ -31,7 +31,7 @@
     <gamepadControls>false</gamepadControls>
     <rumble>true</rumble>
     <ambientOnlyToggle>false</ambientOnlyToggle>
-    <zoomButtons>false</zoomButtons>
+    <zoomButtons>true</zoomButtons>
     <invertScrollDirection>false</invertScrollDirection>
     <screenFlash>true</screenFlash>
     <showPlacementTileForGamepad>true</showPlacementTileForGamepad>
@@ -57,7 +57,7 @@
     <ambientVolumeLevel>0.75</ambientVolumeLevel>
     <snowTransparency>1</snowTransparency>
     <dialogueFontScale>1</dialogueFontScale>
-    <zoomLevel>1</zoomLevel>
+    <zoomLevel>0.75</zoomLevel>
     <localCoopBaseZoomLevel>1</localCoopBaseZoomLevel>
     <uiScale>1</uiScale>
     <localCoopDesiredUIScale>1.5</localCoopDesiredUIScale>
