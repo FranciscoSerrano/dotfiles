@@ -92,3 +92,7 @@ pomodoro () {
 
 alias work="pomodoro 'work'"
 alias br="pomodoro 'break'"
+
+#### Added by green-restore install-tools
+autoload -Uz compinit && compinit
+####
