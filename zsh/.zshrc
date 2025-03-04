@@ -66,6 +66,7 @@ alias vim='nvim'
 alias vi='nvim'
 alias v='nvim .'
 alias c='clear'
+alias py='python3'
 
 # Shell integrations
 eval "$(zoxide init zsh)"
