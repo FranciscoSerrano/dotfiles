@@ -96,3 +96,4 @@ alias br="pomodoro 'break'"
 #### Added by green-restore install-tools
 autoload -Uz compinit && compinit
 ####
+export PATH="/Internal/Tools/Scripts:/OpenSource/Tools/Scripts:$PATH"
