@@ -1,7 +1,7 @@
 palette = "catppuccin_mocha"
 
 [git_branch]
-symbol = "🌱"
+symbol = "\ue725 "
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
