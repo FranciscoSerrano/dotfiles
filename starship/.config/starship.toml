@@ -5,6 +5,27 @@ command_timeout = 10000
 [git_branch]
 symbol = "\ue725 "
 
+[package]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[python]
+disabled = true
+
+[deno]
+disabled = true
+
+[rust]
+disabled = true
+
+[swift]
+disabled = true
+
+[c]
+disabled = true
+
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
 flamingo = "#f2cdcd"
