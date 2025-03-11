@@ -1,5 +1,7 @@
 palette = "catppuccin_mocha"
 
+command_timeout = 10000
+
 [git_branch]
 symbol = "\ue725 "
 

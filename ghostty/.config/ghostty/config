@@ -1,4 +1,5 @@
-theme = catppuccin-mocha 
+# theme = dark:catppuccin-frappe,light:catppuccin-latte
+theme = dark:GruvboxDark,light:GruvboxLight
 font-size = 20
 window-decoration = true
 font-family = CaskaydiaCove Nerd Font
