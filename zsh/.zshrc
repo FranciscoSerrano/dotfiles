@@ -67,6 +67,7 @@ alias vi='nvim'
 alias v='nvim .'
 alias c='clear'
 alias py='python3'
+alias s='nvim $(fzf -m --preview="bat --color=always {}")'
 
 # Shell integrations
 eval "$(zoxide init zsh)"
