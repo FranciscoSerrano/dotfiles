@@ -101,3 +101,7 @@ alias br="pomodoro 'break'"
 autoload -Uz compinit && compinit
 ####
 export PATH="/Internal/Tools/Scripts:/OpenSource/Tools/Scripts:$PATH"
+export PATH="$PATH:$(go env GOPATH)/bin"
+
+# Count Swift Testing @Test annotations in AutoUnlock tests
+alias count-au-tests='echo "=== Swift Testing @Test Count ===" && echo "" && for file in Tests/SharingTests/AutoUnlock/*Tests.swift; do if [ -f "$file" ]; then count=$(grep -E "^\s*@Test" "$file" | wc -l | tr -d " "); echo "$(basename $file .swift): $count tests"; fi; done && echo "" && total=$(grep -rhE "^\s*@Test" Tests/SharingTests/AutoUnlock/*Tests.swift 2>/dev/null | wc -l | tr -d " ") && echo "Total: $total tests across existing test files"'

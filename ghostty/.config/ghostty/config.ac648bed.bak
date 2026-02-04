@@ -1,8 +1,7 @@
-theme = dark:catppuccin-mocha.conf,light:catppuccin-latte.conf
-# theme = xcodedarkhc
+# theme = dark:catppuccin-frappe,light:catppuccin-latte
+theme = xcodedarkhc
 font-size = 20
 window-decoration = true
 font-family = CaskaydiaCove Nerd Font
 # background-opacity = 0.7
 # background-blur-radius = 20
-keybind = shift+enter=text:\n
