@@ -7,17 +7,19 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "autosave": "off",
+  "edit_predictions": {
+    "provider": "zed"
+  },
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "vim_mode": true,
   "telemetry": {
     "diagnostics": false,
     "metrics": false
   },
-  "features": {
-    "edit_prediction_provider": "zed"
-  },
-  "icon_theme": "Catppuccin Mocha",
+  "icon_theme": "JetBrains New UI Icons (Dark)",
   "agent": {
+    "enable_feedback": true,
     "always_allow_tool_actions": true,
     "default_profile": "write",
     "default_model": {
@@ -25,7 +27,7 @@
       "model": "claude-3-7-sonnet-latest"
     }
   },
-  "theme": "Catppuccin Mocha",
+  "theme": "Everforest Dark Hard (regular)",
   "ui_font_size": 16,
   "buffer_font_size": 15.0
 }
